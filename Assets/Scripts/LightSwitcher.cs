@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class LightSwitcher : MonoBehaviour
 {
-    //поля для цветов светофора
+    //поля для лампочек светофора
     [SerializeField] private TrafficLightsController redLight;
     [SerializeField] private TrafficLightsController yellowLight;
     [SerializeField] private TrafficLightsController greenLight;
 
-    //поля для контроля скорости переключения цветов
+    //поля для контроля скорости переключения лампочек
     [SerializeField] float RedLightTimer;
     [SerializeField] float YellowLightTimer;
     [SerializeField] float GreenLightTimer;
