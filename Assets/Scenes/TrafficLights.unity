@@ -434,6 +434,7 @@ GameObject:
   - component: {fileID: 1072669508}
   - component: {fileID: 1072669507}
   - component: {fileID: 1072669506}
+  - component: {fileID: 1072669509}
   m_Layer: 0
   m_Name: Yellow
   m_TagString: Untagged
@@ -486,7 +487,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 625b1abfb560ce04981d53b2a90f0f0f, type: 2}
+  - {fileID: 2100000, guid: 808465eda41bc94409da564876d9e1bf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -515,6 +516,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1072669504}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1072669509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072669504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 490469e894206744ea0628b175b3642a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onLight: {fileID: 2100000, guid: 625b1abfb560ce04981d53b2a90f0f0f, type: 2}
+  offLight: {fileID: 2100000, guid: 808465eda41bc94409da564876d9e1bf, type: 2}
 --- !u!1 &1085259727
 GameObject:
   m_ObjectHideFlags: 0
@@ -617,6 +632,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1269181598}
+  - component: {fileID: 1269181599}
   m_Layer: 0
   m_Name: Lights
   m_TagString: Untagged
@@ -641,6 +657,24 @@ Transform:
   m_Father: {fileID: 600799044}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1269181599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269181597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 571ce9475bc8c4b4281019ee4a3ba93f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  redLight: {fileID: 2064453569}
+  yellowLight: {fileID: 1072669509}
+  greenLight: {fileID: 1780271123}
+  RedLightTimer: 2.5
+  YellowLightTimer: 2
+  GreenLightTimer: 3
 --- !u!1 &1491598439
 GameObject:
   m_ObjectHideFlags: 0
@@ -779,6 +813,7 @@ GameObject:
   - component: {fileID: 1780271122}
   - component: {fileID: 1780271121}
   - component: {fileID: 1780271120}
+  - component: {fileID: 1780271123}
   m_Layer: 0
   m_Name: Green
   m_TagString: Untagged
@@ -831,7 +866,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cad51f4546a47d04ea341da7ee3225ca, type: 2}
+  - {fileID: 2100000, guid: 808465eda41bc94409da564876d9e1bf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -860,6 +895,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1780271118}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1780271123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780271118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 490469e894206744ea0628b175b3642a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onLight: {fileID: 2100000, guid: cad51f4546a47d04ea341da7ee3225ca, type: 2}
+  offLight: {fileID: 2100000, guid: 808465eda41bc94409da564876d9e1bf, type: 2}
 --- !u!1 &2064453564
 GameObject:
   m_ObjectHideFlags: 0
@@ -872,6 +921,7 @@ GameObject:
   - component: {fileID: 2064453568}
   - component: {fileID: 2064453567}
   - component: {fileID: 2064453566}
+  - component: {fileID: 2064453569}
   m_Layer: 0
   m_Name: Red
   m_TagString: Untagged
@@ -924,7 +974,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 543065a64623dee468b320d29b130040, type: 2}
+  - {fileID: 2100000, guid: 808465eda41bc94409da564876d9e1bf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -953,3 +1003,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2064453564}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2064453569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064453564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 490469e894206744ea0628b175b3642a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onLight: {fileID: 2100000, guid: 543065a64623dee468b320d29b130040, type: 2}
+  offLight: {fileID: 2100000, guid: 808465eda41bc94409da564876d9e1bf, type: 2}
